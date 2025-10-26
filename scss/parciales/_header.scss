@@ -1,0 +1,20 @@
+@import "branding";
+
+.container-fluid {
+  max-width: 80%;
+  .navbar-toggler {
+    color: white;
+  }
+
+  .navbar-toggler:hover {
+    color: $verde-medio;
+  }
+
+  .btn-success {
+    background-color: $verde-medio;
+  }
+
+  .btn-success:hover {
+    background-color: $gris-medio;
+  }
+}

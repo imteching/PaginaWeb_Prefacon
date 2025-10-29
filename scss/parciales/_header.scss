@@ -1,7 +1,11 @@
 @import "branding";
 
 .container-fluid {
-  max-width: 80%;
+  max-width: $ancho-80;
+
+  .logo-prefacon {
+    width: 200px;
+  }
   .navbar-toggler {
     color: white;
   }

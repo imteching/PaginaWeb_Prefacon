@@ -8,6 +8,9 @@ body {
 .container-fluid {
   max-width: 80%;
 }
+.container-fluid .logo-prefacon {
+  width: 200px;
+}
 .container-fluid .navbar-toggler {
   color: white;
 }
@@ -19,6 +22,69 @@ body {
 }
 .container-fluid .btn-success:hover {
   background-color: #a9a9a9;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 80%;
+  margin: auto;
+}
+.productos .prefabricados {
+  width: 100%;
+  height: 200px;
+  border: 3px solid #85c226;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productos .prefabricados h4 {
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+}
+.productos .prefabricados:hover {
+  box-shadow: 10px 10px 20px gray;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.productos .pv {
+  background-image: url(../../recursos/1_pre_viv/3-lav-ceramica.jpg);
+}
+.productos .pu {
+  background-image: url(../../recursos/2_pre_urb/jardineras_nuevas/100.jpg);
+}
+.productos .pa {
+  background-image: url(../../recursos/3_pre_art/2-bal-30.jpg);
+}
+
+@media (min-width: 900px) {
+  .productos {
+    flex-direction: row;
+    width: 90%;
+    height: 400px;
+    align-items: stretch;
+  }
+  .productos .prefabricados {
+    height: auto;
+    margin: 15px;
+  }
+  .productos .pv {
+    background-image: url(../../recursos/1_pre_viv/35-freg-granotrany.jpg);
+  }
+  .productos .pu {
+    background-image: url(../../recursos/2_pre_urb/jardineras_nuevas/151.jpg);
+  }
+  .productos .pa {
+    background-image: url(../../recursos/3_pre_art/71-cap-gotico.jpg);
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

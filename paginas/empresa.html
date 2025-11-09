@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa | Prefacon</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="shortcut icon" href="../recursos/logo.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            class="logo-prefacon"
+            src="../recursos/logo_header.png"
+            alt="Prefacon"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa-solid fa-bars"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav nav-underline justify-content-end flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="empresa.html">EMPRESA</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="./productos.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="./productos.html#prefviv"
+                      >Prefabricados para Vivienda</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./productos.html#prefart"
+                      >Prefabricados Artesanales</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./productos.html#prefurb"
+                      >Prefabricados Urbanos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">GALERÍA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <!--<form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar producto"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>-->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container px-0 text-center empresa">
+      <div class="row g-0 align-items-center">
+        <div class="col-12 col-xl-7 d-flex slogan">
+          <h5>PREFABRICADOS <br />PARA LA CONSTRUCCIÓN</h5>
+        </div>
+        <div class="col-12 col-xl-5 text-start descripcion">
+          <p>
+            Prefacon fue fundada en la ciudad de Medellín. Desde 1980 nos
+            dedicamos a la manufactura y venta de artículos prefabricados en
+            concreto pensados para ofrecer función y estética a los espacios
+            urbanos y del hogar. <br />Gracias a que contamos con un equipo
+            experimentado y buscamos mejorar nuestros procesos de fabricación,
+            tenemos la seguridad de entregar productos de buena calidad y
+            perdurabilidad. <br />Nos mueve el interés por ofrecer opciones a un
+            mercado cambiante y diverso, que a diario busca soluciones
+            integrales e innovadoras. <br />Nuestro compromiso con clientes y
+            aliados, ha sido el de ofrecer un servicio oportuno y forjar un
+            vínculo de confianza y respeto.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="info-footer">
+        <div class="contacto">
+          <h4>Contáctanos</h4>
+          <div class="whatsapp">
+            <a class="fa-brands fa-whatsapp"></a>
+            <div class="numeros-wp">
+              <a
+                href="https://api.whatsapp.com/send?phone=573014388276"
+                target="_blank"
+                >+57 301 438 8276
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=573014624359"
+                target="_blank"
+                >+57 301 462 4359
+              </a>
+            </div>
+          </div>
+          <div class="email">
+            <a class="fa-solid fa-at"></a>
+            <a href="mailto:prefabricadosprefacon@gmail.com"
+              >prefabricadosprefacon@gmail.com</a
+            >
+          </div>
+          <div class="llamar">
+            <a class="fa-solid fa-phone"></a>
+            <div class="numeros-ph">
+              <a href="tel:4 4210988">(4) 4210988</a>
+              <a href="tel:4 4210988">(4) 4370785</a>
+            </div>
+          </div>
+          <div class="place">
+            <a class="fa-solid fa-location-dot"></a>
+            <div class="direccion">
+              <a
+                href="https://maps.app.goo.gl/czR57ctb7ZQFgymU6"
+                target="_blank"
+                >Carrera 80 #77BB-50, Pilarica, Medellin.</a
+              >
+              <a
+                href="https://maps.app.goo.gl/BgqnLtNGx695Npxs7"
+                target="_blank"
+                >Calle 103 #65-10, Castilla, Medellin.</a
+              >
+              <a
+                href="https://maps.app.goo.gl/4A3HGDQXbethLXqe7"
+                target="_blank"
+                >Carrera 63 #111E-04, La Paralela, Medellin.</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="redes">
+          <h4>Síguenos en nuestras redes</h4>
+          <a
+            class="fa-brands fa-facebook-f"
+            href="https://www.facebook.com/Prefacon-404831663430341"
+          ></a>
+          <a
+            class="fa-brands fa-instagram"
+            href="https://www.instagram.com/prefacon/"
+          ></a>
+        </div>
+        <span class="copy"
+          >Prefacon &copy; 2025 - Todos los derechos reservados</span
+        >
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/9851f2c3e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

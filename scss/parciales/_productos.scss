@@ -1,5 +1,16 @@
 @import "branding";
 
+main {
+  text-align: center;
+  h2 {
+    display: block;
+    border-bottom: 1px solid black;
+    margin: auto;
+    font-size: 1.8rem;
+    margin: 30px 20px 30px 20px;
+  }
+}
+
 .productos {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,77 @@
+@import "branding";
+
+#galeriadeproyectos {
+  background: lightgray;
+  text-align: center;
+}
+#galeriadeproyectos h3 {
+  color: black;
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+#galeria {
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+}
+#jardineras {
+  display: flex;
+  width: 3200%;
+  height: 100%;
+}
+#jardineras img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#jardineras img:hover {
+  transform: scale(1.05);
+}
+#btn-prev,
+#btn-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+}
+#btn-prev {
+  left: 0px;
+}
+#btn-next {
+  right: 0px;
+}
+
+#btn-prev:hover,
+#btn-next:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+@media (min-width: 800px) {
+  #galeria {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1200px) {
+  #galeria {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+}

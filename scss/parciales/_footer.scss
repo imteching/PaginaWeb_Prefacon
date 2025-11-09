@@ -1,0 +1,81 @@
+@import "branding";
+
+footer {
+  background-color: gray;
+  color: white;
+
+  .info-footer {
+    max-width: $ancho-80;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h4 {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.contacto,
+.redes {
+  width: 100%;
+  max-width: 100%;
+  font-size: 15px;
+  margin: 20px;
+}
+.contacto a,
+.redes a {
+  color: white;
+  text-decoration: none;
+}
+.contacto a:hover,
+.redes a:hover {
+  cursor: pointer;
+  color: rgb(133, 194, 38);
+}
+.contacto {
+  .fa-solid,
+  .fa-brands {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .whatsapp,
+  .email,
+  .llamar,
+  .place {
+    display: flex;
+    align-items: center;
+  }
+  .direccion,
+  .numeros-wp,
+  .numeros-ph {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.redes {
+  text-align: center;
+  .fa-brands {
+    font-size: 30px;
+    margin: 10px;
+  }
+}
+.copy {
+  font-size: 15px;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  footer .info-footer {
+    width: 100%;
+    margin: auto;
+  }
+  .redes,
+  .contacto {
+    width: 100%;
+    max-width: 45%;
+  }
+}

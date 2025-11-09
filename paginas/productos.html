@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | Prefacon</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="shortcut icon" href="../recursos/logo.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            class="logo-prefacon"
+            src="../recursos/logo_header.png"
+            alt="Prefacon"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa-solid fa-bars"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav nav-underline justify-content-end flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="empresa.html">EMPRESA</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="./productos.html#prefviv"
+                      >Prefabricados para Vivienda</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./productos.html#prefart"
+                      >Prefabricados Artesanales</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./productos.html#prefurb"
+                      >Prefabricados Urbanos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">GALERÍA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <!--<form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar producto"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>-->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="categorias">
+        <div class="pv" id="prefviv">
+          <h3>PREFABRICADOS PARA VIVIENDA</h3>
+          <a class="lav" href="3-1-lavaderos.html">
+            <span>LAVADEROS</span>
+            <img
+              src="recursos/1-prefviv/1-lav-ceramica.jpg"
+              alt="Lavadero en cerámica"
+            />
+          </a>
+          <a class="freg" href="3-2-fregaderos.html">
+            <span>FREGADEROS</span>
+            <img
+              src="recursos/1-prefviv/23-freg-ceramica.jpg"
+              alt="Fregadero en cerámica"
+            />
+          </a>
+          <a class="lavesc" href="3-3-lavaescobas.html">
+            <span>LAVAESCOBAS</span>
+            <img
+              src="recursos/1-prefviv/44-lavaesc-ceramica.jpg"
+              alt="Lavaescobas en cerámica"
+            />
+          </a>
+          <a class="mes" href="3-4-mesas.html">
+            <span>MESÓN DE COCINA</span>
+            <img
+              src="recursos/1-prefviv/54-meson-concreto.jpg"
+              alt="Mesón de cocina"
+            />
+          </a>
+          <a class="lag" href="3-5-lagrimales.html">
+            <span>LAGRIMALES</span>
+            <img src="recursos/1-prefviv/comodin-1.jpg" alt="Lagrimales" />
+          </a>
+          <a class="gar" href="3-6-gargolas.html">
+            <span>GÁRGOLAS</span>
+            <img src="recursos/1-prefviv/56-gargolas.jpg" alt="Gárgola" />
+          </a>
+          <a class="gar" href="3-7-calados.html">
+            <span>CALADOS</span>
+            <img src="recursos/1-prefviv/64-calado-flor.jpg" alt="Calado" />
+          </a>
+        </div>
+        <div class="pa" id="prefart">
+          <h3>PREFABRICADOS ARTESANALES</h3>
+          <a class="bal" href="3-8-balaustres.html">
+            <span>BALAUSTRES</span>
+            <img src="recursos/2-prefart/6-bal-43.jpg" alt="Balaustres" />
+          </a>
+          <a class="cal" href="3-9-calados.html">
+            <span>CALADOS</span>
+            <img src="recursos/2-prefart/49-calado.jpg" alt="Calados" />
+          </a>
+          <a class="col" href="3-10-columnas.html">
+            <span>COLUMNAS</span>
+            <img src="recursos/2-prefart/58-columnas.jpg" alt="Columnas" />
+          </a>
+          <a class="cap" href="3-11-capiteles.html">
+            <span>CAPITELES</span>
+            <img src="recursos/2-prefart/72-cap-gotico.jpg" alt="Capiteles" />
+          </a>
+          <a class="ped" href="3-12-pedestales.html">
+            <span>PEDESTALES</span>
+            <img src="recursos/2-prefart/83-ped-hojas.jpg" alt="Pedestales" />
+          </a>
+          <a class="fig" href="3-13-figuras.html">
+            <span>FIGURAS</span>
+            <img
+              src="recursos/2-prefart/98-perrosanbernardo.jpg"
+              alt="Figuras"
+            />
+          </a>
+          <a class="beb" href="3-14-bebederos.html">
+            <span>BEBEDEROS</span>
+            <img src="recursos/2-prefart/105-bebedero.jpg" alt="Bebedero" />
+          </a>
+          <a class="plac" href="3-15-placas.html">
+            <span>PLACAS DECORATIVAS</span>
+            <img
+              src="recursos/2-prefart/107-placa-decorativa.jpg"
+              alt="Placas decorativas"
+            />
+          </a>
+          <a class="" href="3-16-gargola.html">
+            <span>GÁRGOLAS</span>
+            <img
+              src="recursos/2-prefart/110-gargola-leon.jpg"
+              alt="Gárgola león"
+            />
+          </a>
+        </div>
+        <div class="pu" id="prefurb">
+          <h3>PREFABRICADOS URBANOS</h3>
+          <a class="sar" href="3-17-cordones.html">
+            <span>CORDON / SADINEL</span>
+            <img src="recursos/3-prefurb/1-cordon.jpg" alt="Sardinel" />
+          </a>
+          <a class="pas" href="3-18-pasos.html">
+            <span>PASOS</span>
+            <img src="recursos/3-prefurb/5-paso-tortuga.jpg" alt="Pasos" />
+          </a>
+          <a class="bol" href="3-19-bolardos.html">
+            <span>BOLARDOS</span>
+            <img src="recursos/3-prefurb/comodin-1.jpg" alt="Bolados" />
+          </a>
+          <a class="est" href="3-20 -estacones.html">
+            <span>ESTACONES</span>
+            <img src="recursos/3-prefurb/17-estacones.jpg" alt="Estacones" />
+          </a>
+          <a class="but" href="3-21-butacos.html">
+            <span>BUTACOS</span>
+            <img src="recursos/3-prefurb/20-butaco.jpg" alt="Butacos" />
+          </a>
+          <a class="ban" href="3-22-bancas.html">
+            <span>BANCAS</span>
+            <img src="recursos/3-prefurb/33-banca-medialuna.jpg" alt="Bancas" />
+          </a>
+          <a class="jm" href="3-23-juegos.html">
+            <span>JUEGO DE MESA</span>
+            <img
+              src="recursos/3-prefurb/39-juego-parques.jpg"
+              alt="Juego de mesa"
+            />
+          </a>
+          <a class="rej" href="3-24-rejillas.html">
+            <span>REJILLAS PARA CÁRCAMO</span>
+            <img
+              src="recursos/3-prefurb/48-rejilla.jpg"
+              alt="Rejillas para cárcamo"
+            />
+          </a>
+          <a class="sum" href="3-25-sumidero.html">
+            <span>SUMIDEROS</span>
+            <img
+              src="recursos/3-prefurb/84-sumidero-colmena.jpg"
+              alt="Sumidero"
+            />
+          </a>
+          <a class="top" href="3-26-topes.html">
+            <span>TOPELLANTAS</span>
+            <img src="recursos/3-prefurb/comodin-2.jpg" alt="Topellantas" />
+          </a>
+          <a class="jar" href="3-27-jardineras.html">
+            <span>JARDINERAS</span>
+            <img src="recursos/3-prefurb/comodin-3.jpg" alt="Jardineras" />
+          </a>
+          <a class="gav" href="3-28-gavion.html">
+            <span>GAVIÓN</span>
+            <img src="recursos/3-prefurb/85-gavion.JPG" alt="Gavión" />
+          </a>
+          <a class="gav" href="3-29-fuentes.html">
+            <span>FUENTES</span>
+            <img src="recursos/3-prefurb/87-fuente.jpg" alt="Gavión" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info-footer">
+        <div class="contacto">
+          <h4>Contáctanos</h4>
+          <div class="whatsapp">
+            <a class="fa-brands fa-whatsapp"></a>
+            <div class="numeros-wp">
+              <a
+                href="https://api.whatsapp.com/send?phone=573014388276"
+                target="_blank"
+                >+57 301 438 8276
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=573014624359"
+                target="_blank"
+                >+57 301 462 4359
+              </a>
+            </div>
+          </div>
+          <div class="email">
+            <a class="fa-solid fa-at"></a>
+            <a href="mailto:prefabricadosprefacon@gmail.com"
+              >prefabricadosprefacon@gmail.com</a
+            >
+          </div>
+          <div class="llamar">
+            <a class="fa-solid fa-phone"></a>
+            <div class="numeros-ph">
+              <a href="tel:4 4210988">(4) 4210988</a>
+              <a href="tel:4 4210988">(4) 4370785</a>
+            </div>
+          </div>
+          <div class="place">
+            <a class="fa-solid fa-location-dot"></a>
+            <div class="direccion">
+              <a
+                href="https://maps.app.goo.gl/czR57ctb7ZQFgymU6"
+                target="_blank"
+                >Carrera 80 #77BB-50, Pilarica, Medellin.</a
+              >
+              <a
+                href="https://maps.app.goo.gl/BgqnLtNGx695Npxs7"
+                target="_blank"
+                >Calle 103 #65-10, Castilla, Medellin.</a
+              >
+              <a
+                href="https://maps.app.goo.gl/4A3HGDQXbethLXqe7"
+                target="_blank"
+                >Carrera 63 #111E-04, La Paralela, Medellin.</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="redes">
+          <h4>Síguenos en nuestras redes</h4>
+          <a
+            class="fa-brands fa-facebook-f"
+            href="https://www.facebook.com/Prefacon-404831663430341"
+          ></a>
+          <a
+            class="fa-brands fa-instagram"
+            href="https://www.instagram.com/prefacon/"
+          ></a>
+        </div>
+        <span class="copy"
+          >Prefacon &copy; 2025 - Todos los derechos reservados</span
+        >
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/9851f2c3e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

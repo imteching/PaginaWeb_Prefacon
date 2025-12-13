@@ -1,4 +1,4 @@
-@import "branding";
+@use "branding";
 
 #galeriadeproyectos {
   background: lightgray;
@@ -9,6 +9,7 @@
   padding: 15px;
   border-bottom: 1px solid black;
 }
+/*
 #galeria {
   margin: auto;
   width: 100%;
@@ -74,4 +75,4 @@
     margin-right: auto;
     overflow: hidden;
   }
-}
+}*/

@@ -1,78 +1,95 @@
-@import "branding";
+@use "branding";
 
-main {
-  text-align: center;
-  h2 {
-    display: block;
-    border-bottom: 1px solid black;
-    margin: auto;
-    font-size: 1.8rem;
-    margin: 30px 20px 30px 20px;
-  }
+#categorias {
+  margin-top: 120px;
 }
-
-.productos {
+#categorias .pv,
+#categorias .pa,
+#categorias .pu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  width: $ancho-80;
-  margin: auto;
-
-  .prefabricados {
-    width: 100%;
-    height: 200px;
-    border: 3px solid $verde-medio;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h4 {
-      color: white;
-      text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black,
-        -1px -1px 0 black;
-    }
-  }
-  .prefabricados:hover {
-    box-shadow: 10px 10px 20px gray;
-    cursor: pointer;
-    transform: scale(1.05);
-  }
-  .pv {
-    background-image: url("../../recursos/1_pre_viv/3-lav-ceramica.jpg");
-  }
-  .pu {
-    background-image: url("../../recursos/2_pre_urb/jardineras_nuevas/jardinera2.jpg");
-  }
-  .pa {
-    background-image: url("../../recursos/3_pre_art/2-bal-30.jpg");
-  }
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.pv h3,
+.pa h3,
+.pu h3 {
+  display: block;
+  width: 100%;
+  max-width: 330px;
+  text-align: center;
+  height: 60px;
+  border-radius: 10px;
+  font-weight: normal;
+  color: white;
+  padding: 20px;
+}
+.pv h3 {
+  background-color: red;
+}
+.pa h3 {
+  background-color: blue;
+}
+.pu h3 {
+  background-color: #f1cf00;
+}
+#categorias a {
+  margin: 15px;
+  position: relative;
+}
+#categorias img {
+  width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+a span {
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: black;
 }
 
-@media (min-width: 900px) {
-  .productos {
-    flex-direction: row;
-    width: 90%;
-    height: 400px;
-    align-items: stretch;
+#categorias img:hover {
+  box-shadow: 10px 10px 20px gray;
+  cursor: pointer;
+  opacity: 1;
+}
 
-    .prefabricados {
-      height: auto;
-      margin: 15px;
-    }
-    .pv {
-      background-image: url("../../recursos/1_pre_viv/35-freg-granotrany.jpg");
-    }
-    .pu {
-      background-image: url("../../recursos/2_pre_urb/jardineras_nuevas/151.jpg");
-    }
-    .pa {
-      background-image: url("../../recursos/3_pre_art/71-cap-gotico.jpg");
-    }
+a:hover span {
+  opacity: 0;
+}
+
+#categorias img:active {
+  transform: scale(1.05);
+}
+
+@media (min-width: 660px) {
+  .pv h3,
+  .pa h3,
+  .pu h3 {
+    width: 100%;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 990px) {
+  #categorias {
+    width: 100%;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pv h3,
+  .pa h3,
+  .pu h3 {
+    width: 100%;
+    max-width: 990px;
   }
 }

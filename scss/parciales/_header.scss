@@ -1,10 +1,10 @@
-@import "branding";
+@use "branding";
 
-.container-fluid {
+.encabezado {
   max-width: $ancho-80;
 
   .logo-prefacon {
-    width: 200px;
+    width: 250px;
   }
   .navbar-toggler {
     color: white;

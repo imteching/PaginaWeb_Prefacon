@@ -5,22 +5,22 @@ body {
   font-style: normal;
 }
 
-.container-fluid {
+.encabezado {
   max-width: 80%;
 }
-.container-fluid .logo-prefacon {
-  width: 200px;
+.encabezado .logo-prefacon {
+  width: 250px;
 }
-.container-fluid .navbar-toggler {
+.encabezado .navbar-toggler {
   color: white;
 }
-.container-fluid .navbar-toggler:hover {
+.encabezado .navbar-toggler:hover {
   color: #85c226;
 }
-.container-fluid .btn-success {
+.encabezado .btn-success {
   background-color: #85c226;
 }
-.container-fluid .btn-success:hover {
+.encabezado .btn-success:hover {
   background-color: #a9a9a9;
 }
 
@@ -45,7 +45,7 @@ main h2 {
 }
 .productos .prefabricados {
   width: 100%;
-  height: 200px;
+  height: 300px;
   border: 3px solid #85c226;
   background-size: cover;
   background-position: center;
@@ -59,6 +59,7 @@ main h2 {
 }
 .productos .prefabricados h4 {
   color: white;
+  text-decoration: none;
   text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
 }
 .productos .prefabricados:hover {
@@ -67,13 +68,13 @@ main h2 {
   transform: scale(1.05);
 }
 .productos .pv {
-  background-image: url(../../recursos/1_pre_viv/3-lav-ceramica.jpg);
+  background-image: url("../../recursos/1_pre_viv/52-meson-granoblanco.jpg");
 }
 .productos .pu {
-  background-image: url(../../recursos/2_pre_urb/jardineras_nuevas/100.jpg);
+  background-image: url("../../recursos/2_pre_urb/jardineras/24_jardinera_huevo_2.jpg");
 }
 .productos .pa {
-  background-image: url(../../recursos/3_pre_art/2-bal-30.jpg);
+  background-image: url("../../recursos/3_pre_art/balaustres/1_balaustre_30cm_2.jpg");
 }
 
 @media (min-width: 900px) {
@@ -88,13 +89,13 @@ main h2 {
     margin: 15px;
   }
   .productos .pv {
-    background-image: url(../../recursos/1_pre_viv/35-freg-granotrany.jpg);
+    background-image: url("../../recursos/1_pre_viv/3-lav-ceramica.jpg");
   }
   .productos .pu {
-    background-image: url(../../recursos/2_pre_urb/jardineras_nuevas/151.jpg);
+    background-image: url("../../recursos/2_pre_urb/jardineras/2_jardinera_jarron.jpg");
   }
   .productos .pa {
-    background-image: url(../../recursos/3_pre_art/71-cap-gotico.jpg);
+    background-image: url("../../recursos/3_pre_art/capiteles/capitel_gotico_1.jpg");
   }
 }
 #galeriadeproyectos {
@@ -108,6 +109,7 @@ main h2 {
   border-bottom: 1px solid black;
 }
 
+/*
 #galeria {
   margin: auto;
   width: 100%;
@@ -115,13 +117,11 @@ main h2 {
   position: relative;
   overflow: hidden;
 }
-
 #jardineras {
   display: flex;
   width: 3200%;
   height: 100%;
 }
-
 #jardineras img {
   width: 100%;
   max-width: 300px;
@@ -129,11 +129,9 @@ main h2 {
   cursor: pointer;
   transition: all 0.5s;
 }
-
 #jardineras img:hover {
   transform: scale(1.05);
 }
-
 #btn-prev,
 #btn-next {
   width: 40px;
@@ -148,18 +146,16 @@ main h2 {
   text-align: center;
   border-radius: 50%;
 }
-
 #btn-prev {
   left: 0px;
 }
-
 #btn-next {
   right: 0px;
 }
 
 #btn-prev:hover,
 #btn-next:hover {
-  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 1);
 }
 
 @media (min-width: 800px) {
@@ -179,13 +175,13 @@ main h2 {
     margin-right: auto;
     overflow: hidden;
   }
-}
+}*/
 .empresa {
   max-width: 100%;
 }
 .empresa .row .slogan {
   height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../../recursos/slogan.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../../recursos/slogan.jpg");
   background-size: cover;
 }
 .empresa .row .slogan h5 {
@@ -310,310 +306,32 @@ a:hover span {
     max-width: 990px;
   }
 }
-#categorias {
-  margin-top: 100px;
-}
-
-.gallery-container {
-  display: grid;
+.d-grid {
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 150px;
-  padding: 20px;
-  grid-gap: 10px;
+  grid-auto-rows: 300px;
 }
-
-.gallery-img {
+.d-grid .img-fluid {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  cursor: pointer;
-  transition: all 0.5s;
 }
-
-.gallery-img:hover {
+.d-grid .img-fluid:hover {
   transform: scale(1.02);
 }
 
-.gallery-img:nth-child(4) {
-  grid-column-start: span 2;
-}
-
-.gallery-img:nth-child(7) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(9) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(17) {
-  grid-column-start: span 2;
-}
-
-.gallery-img:nth-child(19) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(28) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(30) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(32) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(33) {
-  grid-column-start: span 2;
-}
-
-.gallery-img:nth-child(34) {
-  grid-column-start: span 2;
-}
-
-.gallery-img:nth-child(41) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(42) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(44) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(45) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(46) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(52) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(53) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(54) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(56) {
-  grid-column-start: span 2;
-}
-
-.gallery-img:nth-child(57) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(58) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(63) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(64) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(65) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(66) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(71) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(73) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(77) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(81) {
-  grid-column-start: span 2;
-}
-
-.gallery-img:nth-child(84) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(85) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(88) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(92) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(93) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(94) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(96) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(104) {
-  grid-column-start: span 2;
-}
-
-.gallery-img:nth-child(109) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(110) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(113) {
-  grid-column-start: span 2;
-}
-
-.gallery-img:nth-child(114) {
-  grid-row-start: span 2;
-}
-
-.gallery-img:nth-child(116) {
-  grid-row-start: span 2;
-}
-
-@media (min-width: 990px) {
-  .gallery-container {
-    display: grid;
+@media (min-width: 992px) {
+  .d-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  .gallery-img:nth-child(1) {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(4) {
-    grid-column-start: span 1;
-  }
-  .gallery-img:nth-child(8) {
-    grid-column-start: span 2;
-  }
-  .gallery-img:nth-child(9) {
-    grid-row-start: span 3;
-  }
-  .gallery-img:nth-child(13) {
-    grid-column-start: span 2;
-  }
-  .gallery-img:nth-child(20) {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(32) {
-    grid-row-start: span 1;
-  }
-  .gallery-img:nth-child(33) {
-    grid-column-start: span 1;
-  }
-  .gallery-img:nth-child(34) {
-    grid-column-start: span 1;
-  }
-  .gallery-img:nth-child(36) {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(50) {
-    grid-row-start: span 1;
-  }
-  .gallery-img:nth-child(51) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(54) {
-    grid-column-start: span 1;
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(78) {
-    grid-row-start: span 3;
-  }
-  .gallery-img:nth-child(81) {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(88) {
-    grid-row-start: span 3;
-  }
-  .gallery-img:nth-child(93) {
-    grid-row-start: span 3;
-  }
-  .gallery-img:nth-child(103) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(105) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(106) {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(107) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(109) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(111) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(112) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(114) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(115) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(116) {
-    grid-row-start: span 2;
-  }
-  .gallery-img:nth-child(117) {
-    grid-row-start: span 2;
-  }
 }
-@media (min-width: 1024px) {
-  #categorias {
-    width: 990px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-/*Estilos del modal*/
 .overlay {
+  z-index: 10000;
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -621,7 +339,6 @@ a:hover span {
   visibility: hidden;
   opacity: 0;
 }
-
 .overlay .slideshow {
   width: 90%;
   height: 90%;
@@ -629,14 +346,7 @@ a:hover span {
   display: flex;
   justify-content: center;
 }
-
-.slideshow img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.btn-cerrar {
+.overlay .slideshow .btn-cerrar {
   position: absolute;
   top: -15px;
   right: -15px;
@@ -652,44 +362,52 @@ a:hover span {
   padding: 5px;
   transition: all 0.2s ease;
 }
-
-.btn-cerrar:hover {
+.overlay .slideshow .btn-cerrar:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
-
-.botones {
-  width: 40px;
-  height: 40px;
+.overlay .slideshow .botones {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.5);
   color: rgb(133, 194, 38);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 50px;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
-
-.botones:hover {
-  transform: scale(1.05);
-  transition: all 0.2s ease;
-}
-
-.atras {
-  left: 20px;
-}
-
-.adelante {
-  right: 20px;
-}
-
-.overlay .fa-solid {
+.overlay .slideshow .botones .fa-solid {
   pointer-events: none;
 }
+.overlay .slideshow .botones:hover > i {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+.overlay .slideshow .adelante {
+  right: 20px;
+}
+.overlay .slideshow .atras {
+  left: 20px;
+}
+.overlay .slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
+@media screen and (max-width: 992px) {
+  .adelante {
+    right: 5px;
+  }
+  .atras {
+    left: 5px;
+  }
+}
 footer {
   background-color: gray;
   color: white;

@@ -1,34 +1,10 @@
-@use "branding";
+@use "../parciales/branding" as *;
 
 .empresa {
-  max-width: 100%;
   .row {
-    .slogan {
-      height: 500px;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5)),
-        url("../../recursos/slogan.jpg");
-      background-size: cover;
-      h5 {
-        color: white;
-        font-size: 2rem;
-        margin: auto;
-      }
-    }
-
     .descripcion {
       background-color: $verde-medio;
-      p {
-        font-size: 1.5rem;
-        color: white;
-        padding: 10px 80px;
-        flex-wrap: wrap;
-      }
-    }
-    @media (min-width: 1200px) {
-      .slogan {
-        height: auto;
-        align-self: stretch;
-      }
+      
     }
   }
 }

@@ -1,4 +1,4 @@
-@use "branding";
+@use "../parciales/branding" as *;
 
 main {
   text-align: center;
@@ -32,6 +32,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     h4 {
       color: white;
       text-decoration: none;

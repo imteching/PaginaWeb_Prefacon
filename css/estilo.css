@@ -56,6 +56,7 @@ main h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 .productos .prefabricados h4 {
   color: white;
@@ -176,33 +177,8 @@ main h2 {
     overflow: hidden;
   }
 }*/
-.empresa {
-  max-width: 100%;
-}
-.empresa .row .slogan {
-  height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../../recursos/slogan.jpg");
-  background-size: cover;
-}
-.empresa .row .slogan h5 {
-  color: white;
-  font-size: 2rem;
-  margin: auto;
-}
 .empresa .row .descripcion {
   background-color: #85c226;
-}
-.empresa .row .descripcion p {
-  font-size: 1.5rem;
-  color: white;
-  padding: 10px 80px;
-  flex-wrap: wrap;
-}
-@media (min-width: 1200px) {
-  .empresa .row .slogan {
-    height: auto;
-    align-self: stretch;
-  }
 }
 
 #categorias {

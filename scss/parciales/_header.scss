@@ -3,9 +3,6 @@
 .encabezado {
   max-width: $ancho-80;
 
-  .logo-prefacon {
-    width: 250px;
-  }
   .navbar-toggler {
     color: white;
   }
@@ -20,5 +17,11 @@
 
   .btn-success:hover {
     background-color: $gris-medio;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-prefacon {
+    width: 150px;
   }
 }

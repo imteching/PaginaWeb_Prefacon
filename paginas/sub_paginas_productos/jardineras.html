@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jardineras</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../css/estilo.css" />
+    <link rel="shortcut icon" href="../../recursos/logo.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-secondary">
+      <div class="container-fluid encabezado">
+        <a class="navbar-brand" href="../../index.html"
+          ><img
+            class="logo-prefacon"
+            src="../../recursos/logo_header.png"
+            alt="Prefacon"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa-solid fa-bars"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav nav-underline justify-content-end flex-grow-1 pe-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../empresa.html">EMPRESA</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="./productos.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PRODUCTOS
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li>
+                    <a class="dropdown-item" href="../productos.html#prefviv"
+                      >Prefabricados para Vivienda</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../productos.html#prefart"
+                      >Prefabricados Artesanales</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../productos.html#prefurb"
+                      >Prefabricados Urbanos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../galeria.html">GALERÍA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+            <!--<form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar producto"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Buscar</button>
+            </form>-->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="overlay">
+                    <div class="slideshow">
+                        <div id="close-button" class="btn-cerrar"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="botones adelante"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="botones atras"><i class="fa-solid fa-arrow-left"></i></div>
+                        <img src="" alt="" id="img_slideshow">
+                    </div>
+                </div>
+      <div class="container-fluid container-lg text-center">
+        <div class="d-grid">
+          <!--
+          <a data-toggle="lightbox" data-gallery="photogallery" href="../recursos/3_pre_art/balaustres/10_balaustre_62cm_3.jpg"><img class="img-fluid p-2"  src="../recursos/3_pre_art/balaustres/10_balaustre_62cm_3.jpg" alt=""></a>
+          <a data-toggle="lightbox" data-gallery="photogallery" href="../recursos/3_pre_art/balaustres/10_balaustre_62cm_2.jpg"><img class="img-fluid p-2" src="../recursos/3_pre_art/balaustres/1_balaustre_30cm_3.jpg" alt=""></a>
+          -->
+          
+          <img class="img-fluid p-2"  src="../../recursos/2_pre_urb/jardineras/28_jardinera_pentagono.jpg" alt="" data-img-mostrar="0">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/2_jardinera_jarron.jpg" alt="" data-img-mostrar="1">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/3_jardinera_abusardada.jpg" alt="" data-img-mostrar="2">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/4_jardinera_rustica.jpg" alt="" data-img-mostrar="3">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/5_jardinera_conica_raya_ancha.jpg" alt="" data-img-mostrar="4">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/5_jardinera_conica_rayada.jpg" alt="" data-img-mostrar="5">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/6_jardinera_cascaron.jpg" alt="" data-img-mostrar="6">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/6_jardinera_esferica.jpg" alt="" data-img-mostrar="7">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/6_jardinera_esferica_raya_ancha.jpg" alt="" data-img-mostrar="8">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/7_jardinera_pata_elefante.jpg" alt="" data-img-mostrar="9">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/8_jardinera_caliz.jpg" alt="" data-img-mostrar="10">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/9_jardinera_ondas.jpg" alt="" data-img-mostrar="11">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/10_jardinera_buda.jpg" alt="" data-img-mostrar="12">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/10_jardinera_buda_2.jpg" alt="" data-img-mostrar="13">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/11_jardinera_rostro_buda.jpg" alt="" data-img-mostrar="14">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/11_jardinera_rostro.jpg" alt="" data-img-mostrar="15">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/11_jardinera_rostro_geometrico.jpg" alt="" data-img-mostrar="16">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/11_jardinera_rostro_indio.jpg" alt="" data-img-mostrar="17">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/14_jardinera_picos.jpg" alt="" data-img-mostrar="18">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/15_jardinera_cuadricula.jpg" alt="" data-img-mostrar="19">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/1_jardinera_geometrica.jpg" alt="" data-img-mostrar="20">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/16_jardinera_diamante.jpg" alt="" data-img-mostrar="21">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/17_jardinera_cilindrica.jpg" alt="" data-img-mostrar="22">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/17_jardinera_cilindrica_peq.jpg" alt="" data-img-mostrar="23">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/18_jardinera_gota.jpg" alt="" data-img-mostrar="24">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/19_jardinera_rattan_1.jpg" alt="" data-img-mostrar="25">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/19_jardinera_rattan_2.jpg" alt="" data-img-mostrar="26">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/19_jardinera_rattan_3.jpg" alt="" data-img-mostrar="27">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/20_jardinera_conica_ardilla.jpg" alt="" data-img-mostrar="28">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/20_jardinera_conica_flor.jpg" alt="" data-img-mostrar="29">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/20_jardinera_conica_pintada.jpg" alt="" data-img-mostrar="30">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/20_jardinera_conica_peq.jpg" alt="" data-img-mostrar="31">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/20_jardinera_conica_gr.jpg" alt="" data-img-mostrar="32">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/20_jardinera_conica_figuras.jpg" alt="" data-img-mostrar="33">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/20_jardinera_conica_rec.jpg" alt="" data-img-mostrar="34">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/20_jardinera_conica_cil.jpg" alt="" data-img-mostrar="30">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/21_jardinera_copa_grande.jpg" alt="" data-img-mostrar="31">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/21_jardinera_copa_grande_cb.jpg" alt="" data-img-mostrar="32">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/22_jardinera_taza.jpg" alt="" data-img-mostrar="33">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/22_jardinera_taza_con_patas.jpg" alt="" data-img-mostrar="34">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/22_jardinera_taza_lisa.jpg" alt="" data-img-mostrar="35">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/22_jardinera_taza_nido.jpg" alt="" data-img-mostrar="36">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/22_jardinera_tazon_gr.jpg" alt="" data-img-mostrar="37">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/23_jardinera_nido_rayada.jpg" alt="" data-img-mostrar="38">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/24_jardinera_huevo.jpg" alt="" data-img-mostrar="39">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/24_jardinera_huevo_2.jpg" alt="" data-img-mostrar="40">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/25_jardinera_chocolatera.jpg" alt="" data-img-mostrar="41">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/26_jardinera_paila.jpg" alt="" data-img-mostrar="42">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_1.jpg" alt="" data-img-mostrar="43">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_2.jpg" alt="" data-img-mostrar="44">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_3.jpg" alt="" data-img-mostrar="45">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_4.jpg" alt="" data-img-mostrar="46">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_5.jpg" alt="" data-img-mostrar="47">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_6.jpg" alt="" data-img-mostrar="48">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_7.jpg" alt="" data-img-mostrar="49">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_8.jpg" alt="" data-img-mostrar="50">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_9.jpg" alt="" data-img-mostrar="51">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_10.jpg" alt="" data-img-mostrar="52">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_11.jpg" alt="" data-img-mostrar="53">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_12.jpg" alt="" data-img-mostrar="54">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_acanalada_1.jpg" alt="" data-img-mostrar="55">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_acanalada_2.jpg" alt="" data-img-mostrar="56">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_casa.jpg" alt="" data-img-mostrar="57">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/27_jardinera_rec_peq.jpg" alt="" data-img-mostrar="58">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/29_jardinera_cua_1.jpg" alt="" data-img-mostrar="59">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/29_jardinera_cua_2.jpg" alt="" data-img-mostrar="60">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/29_jardinera_cua_3.jpg" alt="" data-img-mostrar="61">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/29_jardinera_cua_4.jpg" alt="" data-img-mostrar="62">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/29_jardinera_cua_5.jpg" alt="" data-img-mostrar="63">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/29_jardinera_cua_6.jpg" alt="" data-img-mostrar="64">
+
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/30_jardinera_uvas_gr.jpg" alt="" data-img-mostrar="65">
+          <img class="img-fluid p-2" src="../../recursos/2_pre_urb/jardineras/30_jardinera_uvas_peq.jpg" alt="" data-img-mostrar="66">
+      </div>
+      
+    </main>
+    <footer>
+      <div class="info-footer">
+        <div class="contacto">
+          <h4>Contáctanos</h4>
+          <div class="whatsapp">
+            <a class="fa-brands fa-whatsapp"></a>
+            <div class="numeros-wp">
+              <a
+                href="https://api.whatsapp.com/send?phone=573014388276"
+                target="_blank"
+                >+57 301 438 8276
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=573014624359"
+                target="_blank"
+                >+57 301 462 4359
+              </a>
+            </div>
+          </div>
+          <div class="email">
+            <a class="fa-solid fa-at"></a>
+            <a href="mailto:prefabricadosprefacon@gmail.com"
+              >prefabricadosprefacon@gmail.com</a
+            >
+          </div>
+          <div class="llamar">
+            <a class="fa-solid fa-phone"></a>
+            <div class="numeros-ph">
+              <a href="tel:4 4210988">(4) 4210988</a>
+              <a href="tel:4 4210988">(4) 4370785</a>
+            </div>
+          </div>
+          <div class="place">
+            <a class="fa-solid fa-location-dot"></a>
+            <div class="direccion">
+              <a
+                href="https://maps.app.goo.gl/czR57ctb7ZQFgymU6"
+                target="_blank"
+                >Carrera 80 #77BB-50, Pilarica, Medellin.</a
+              >
+              <a
+                href="https://maps.app.goo.gl/BgqnLtNGx695Npxs7"
+                target="_blank"
+                >Calle 103 #65-10, Castilla, Medellin.</a
+              >
+              <a
+                href="https://maps.app.goo.gl/4A3HGDQXbethLXqe7"
+                target="_blank"
+                >Carrera 63 #111E-04, La Paralela, Medellin.</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="redes">
+          <h4>Síguenos en nuestras redes</h4>
+          <a
+            class="fa-brands fa-facebook-f"
+            href="https://www.facebook.com/Prefacon-404831663430341"
+          ></a>
+          <a
+            class="fa-brands fa-instagram"
+            href="https://www.instagram.com/prefacon/"
+          ></a>
+        </div>
+        <span class="copy"
+          >Prefacon &copy; 2025 - Todos los derechos reservados</span
+        >
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/9851f2c3e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!--línea de comando Bootstrap para lightbox tipo carrusel-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>-->
+    <script src="../../javascript/sub_productos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let imagenes = [
+    {img: '/recursos/2_pre_urb/jardineras/28_jardinera_pentagono.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/2_jardinera_jarron.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/3_jardinera_abusardada.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/4_jardinera_rustica.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/5_jardinera_conica_raya_ancha.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/5_jardinera_conica_rayada.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/6_jardinera_cascaron.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/6_jardinera_esferica.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/6_jardinera_esferica_raya_ancha.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/7_jardinera_pata_elefante.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/8_jardinera_caliz.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/9_jardinera_ondas.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/10_jardinera_buda.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/10_jardinera_buda_2.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/11_jardinera_rostro_buda.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/8_jardinera_caliz.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/9_jardinera_ondas.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/10_jardinera_buda.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/10_jardinera_buda_2.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/11_jardinera_rostro_buda.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/1_jardinera_geometrica.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/16_jardinera_diamante.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/17_jardinera_cilindrica.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/17_jardinera_cilindrica_peq.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/18_jardinera_gota.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/19_jardinera_rattan_1.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/19_jardinera_rattan_2.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/19_jardinera_rattan_3.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/20_jardinera_conica_ardilla.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/20_jardinera_conica_flor.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/20_jardinera_conica_pintada.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/20_jardinera_conica_peq.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/20_jardinera_conica_gr.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/20_jardinera_conica_figuras.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/20_jardinera_conica_rec.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/20_jardinera_conica_cil.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/21_jardinera_copa_grande.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/21_jardinera_copa_grande_cb.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/22_jardinera_taza.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/22_jardinera_taza_con_patas.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/22_jardinera_taza_lisa.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/22_jardinera_taza_nido.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/22_jardinera_tazon_gr.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/23_jardinera_nido_rayada.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/24_jardinera_huevo.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/24_jardinera_huevo_2.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/25_jardinera_chocolatera.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/26_jardinera_paila.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_1.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_2.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_3.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_4.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_5.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_6.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_7.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_8.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_9.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_10.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_11.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_12.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_acanalada_1.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_acanalada_2.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_casa.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/27_jardinera_rec_peq.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/29_jardinera_cua_1.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/29_jardinera_cua_2.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/29_jardinera_cua_3.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/29_jardinera_cua_4.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/29_jardinera_cua_5.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/29_jardinera_cua_6.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/30_jardinera_uvas_gr.jpg'},
+    {img: '/recursos/2_pre_urb/jardineras/30_jardinera_uvas_peq.jpg'},
+  ]
+  montarGaleria(imagenes)
+      })
+    </script>
+  </body>
+</html>

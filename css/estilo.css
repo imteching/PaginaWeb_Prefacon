@@ -21,11 +21,6 @@ body {
   background-color: #a9a9a9;
 }
 
-@media (max-width: 768px) {
-  .logo-prefacon {
-    width: 150px;
-  }
-}
 main {
   text-align: center;
 }
@@ -118,17 +113,13 @@ main h2 {
   background-color: #85c226;
 }
 
-#categorias {
-  margin-top: 120px;
-}
-
 #categorias .pv,
 #categorias .pa,
 #categorias .pu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 .pv h3,
@@ -136,9 +127,9 @@ main h2 {
 .pu h3 {
   display: block;
   width: 100%;
-  max-width: 330px;
+  max-width: 300px;
   text-align: center;
-  height: 60px;
+  height: auto;
   border-radius: 10px;
   font-weight: normal;
   color: white;
